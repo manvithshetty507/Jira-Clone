@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=section, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div class="box" id="TODO">
+            <div class="title">
+                <p>TO DO</p>
+            <span class="material-symbols-outlined">
+                more_horiz
+                </span>
+            </div>
+            <div class="issue">
+                <button id="create-issue">
+                    <span class="material-symbols-outlined">add</span>
+                <span>Create Issue</span>
+                </button>
+            </div>      
+        </div>
+        <div class="box" id="IN_PROGRESS">
+            <div class="title">
+                <p>IN PROGRESS</p>
+            <span class="material-symbols-outlined">
+                more_horiz
+                </span>
+            </div>
+        </div>
+        <div class="box" id="COMPLETED">
+            <div class="title">
+                <p>COMPLETED</p>
+            <span class="material-symbols-outlined">
+                more_horiz
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        let activeDraggedElement = null;
+    </script>
+    <script src="./script.js"></script>
+    <script src="./draggable.js"></script>
+</body>
+</html>

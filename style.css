@@ -1,0 +1,173 @@
+html {
+    margin: 0px;
+}
+
+.container {
+    min-height: 300px;
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+
+.box {
+    width: 300px;
+    background-color: #F4F5F7;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+}
+
+.title {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .title .material-symbols-outlined {
+    display: none;
+}
+
+.title:hover .material-symbols-outlined{
+    display: block;
+    cursor: pointer;
+}
+
+.box .title:hover p{
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box .title p{
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.issue {
+    margin: 5px 0px;
+}
+#create-issue {
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border:none;
+    background-color: transparent;
+    color: #5E6C84;
+    font-size: 16px;
+    gap: 10px;
+    padding: 4px 0px;
+    transition-duration: 0.4s;
+}
+
+#create-issue:hover {
+    background-color: #47516172;
+    border-radius: 5px;
+}
+
+.input-item {
+    border: 2px solid #0052CC;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+}
+
+.input-item >textarea , .input-item> textarea:focus {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.input-item > select ,.input-item > select:focus {
+    border: none;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    align-self: flex-start;
+}
+
+.modal-class{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #094fb91e;
+    display: flex;
+    justify-content: center;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    margin-top: 100px;
+    gap: 20px;
+    padding: 50px;
+    width: 20vw;
+    background-color: white;
+    position: relative;
+}
+
+.modal input, .modal select, .modal textarea, .modal button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal button {
+    background-color: #0052CC;
+    color: white;
+}
+
+.modal input {
+    background-color: #F4F5F7;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.card {
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0px 1px #202122;
+    display: flex;
+    flex-flow: column;
+    gap:5px;
+    margin: 5px;
+}
+
+.card .taskName {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card .description {
+    font-size: 14px;
+}
+.card .asignee {
+    font-size: 17px;
+    font-weight: 500;
+}
+.card .status-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .asignee::before {
+    content: attr(data-form-name);
+    background-color: #f59f2f;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
